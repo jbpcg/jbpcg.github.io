@@ -5,51 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JBP Consulting - Coming Soon</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+        :root {
+            --primary-color: #3498db;
+            --text-color: #2c3e50;
+            --background-color: #ecf0f1;
+            --accent-color: #e74c3c;
+        }
+        body, html {
+            height: 100%;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background-color: white;
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
             line-height: 1.6;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            max-width: 600px;
+            text-align: center;
+        }
         .logo {
-            font-size: 48px;
+            font-size: 2.5rem;
             font-weight: bold;
-            color: #4a90e2;
-            margin-bottom: 20px;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
         }
         .contact {
-            margin-top: 30px;
-            font-weight: bold;
+            margin-top: 2rem;
+        }
+        .contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-color);
+            transition: border-bottom-color 0.3s ease;
+        }
+        .contact a:hover {
+            border-bottom-color: transparent;
+        }
+        .divider {
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 2rem auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">JBP Consulting</div>
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you an amazing experience. Our website is currently under construction, but we're almost there!</p>
-        <p class="contact">For support or questions, please contact us at:<br>
-        <a href="mailto:admin@jbpcg.com">support@jbpcg.com</a></p>
+        <div class="content">
+            <div class="logo">JBP Consulting</div>
+            <h1>Our website is under construction</h1>
+            <div class="divider"></div>
+            <p>We're working on creating something amazing. Stay tuned for our new site.</p>
+            <p class="contact">For inquiries, please contact us at:<br>
+            <a href="mailto:admin@jbpcg.com">support@jbpcg.com</a></p>
+        </div>
     </div>
 </body>
 </html>
