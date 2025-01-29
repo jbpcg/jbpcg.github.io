@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
             --background-color: #ecf0f1;
             --accent-color: #e74c3c;
         }
-        body, html {
+
+        body,
+        html {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -20,6 +23,7 @@
             color: var(--text-color);
             line-height: 1.6;
         }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -29,35 +33,44 @@
             padding: 20px;
             box-sizing: border-box;
         }
+
         .content {
-            max-width: 600px;
+            max-width: 1000px;
             text-align: center;
         }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            /* Adjust as needed */
+            margin-bottom: 1rem;
         }
+
         h1 {
             font-size: 2rem;
             margin-bottom: 1rem;
         }
+
         p {
             margin-bottom: 1.5rem;
         }
+
         .contact {
             margin-top: 2rem;
         }
+
         .contact a {
             color: var(--accent-color);
             text-decoration: none;
             border-bottom: 1px solid var(--accent-color);
             transition: border-bottom-color 0.3s ease;
         }
+
         .contact a:hover {
             border-bottom-color: transparent;
         }
+
         .divider {
             width: 50px;
             height: 4px;
@@ -66,16 +79,21 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="content">
-            <div class="logo">JBP Consulting</div>
+            <div class="logo">
+                <img src="img/jbpcg-logo@3x.png" alt="JBP Consulting Logo">
+            </div>
             <h1>Our website is under construction</h1>
             <div class="divider"></div>
             <p>We're working on creating something amazing. Stay tuned for our new site.</p>
             <p class="contact">For inquiries, please contact us at:<br>
-            <a href="mailto:admin@jbpcg.com">support@jbpcg.com</a></p>
+                <a href="mailto:admin@jbpcg.com">support@jbpcg.com</a>
+            </p>
         </div>
     </div>
 </body>
+
 </html>
